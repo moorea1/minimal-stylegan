@@ -27,9 +27,9 @@ def prepare(args, sizes=(8, 16, 32, 64, 128, 256, 512, 1024), mode='train'):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--out', type=str, default='E:/FFHG/prepared_dataset')
+    parser.add_argument('--out', type=str, default='/FFHG/prepared_dataset')
     parser.add_argument('--n_worker', type=int, default=8)
-    parser.add_argument('--base_dir', type=str, default='E:/FFHG/dataset')
+    parser.add_argument('--base_dir', type=str, default='/FFHG/dataset')
 
     args = parser.parse_args()
 

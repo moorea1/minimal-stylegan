@@ -13,8 +13,8 @@ class FFHG(Dataset):
     def __init__(self, args, mode='train', transforms=None):
         super(FFHG, self).__init__()
         self.mode = mode
-        self.base_dir = 'E:/FFHG/dataset/{}'.format(mode)
-        self.prepared_base_dir = 'E:/FFHG/prepared_dataset/{}'.format(mode)
+        self.base_dir = '/FFHG/dataset/{}'.format(mode)
+        self.prepared_base_dir = '/FFHG/prepared_dataset/{}'.format(mode)
         self.img_size = args.img_size
         # self.data_list = [os.path.join(self.base_dir, i) for i in os.listdir(self.base_dir)]
         self.data_list = os.listdir(self.base_dir)
